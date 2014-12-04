@@ -35,7 +35,6 @@ function llenarMatriz(dimension)
 }
 //temporal
 function imprimirMatriz(matriz)
-<<<<<<< HEAD
 {
 	var datosMatriz = "";
 	for(i=0;i<matriz.length;i++)
@@ -50,22 +49,6 @@ function imprimirMatriz(matriz)
 }
 function imprimirVector(vector)
 {
-=======
-{
-	var datosMatriz = "";
-	for(i=0;i<matriz.length;i++)
-	{
-		for(j=0;j<matriz.length;j++)
-		{
-			datosMatriz = datosMatriz + matriz[i][j] + " ";
-		}
-		datosMatriz = datosMatriz + "<br>";
-	}
-	document.getElementById("resultado").innerHTML = datosMatriz;
-}
-function imprimirVector(vector)
-{
->>>>>>> ca37fa5bd2ed30a220eb90e2523159a6e97b27b8
 	var datosVector = "";
 	for(i=0;i<vector.length;i++)
 	{
@@ -76,7 +59,6 @@ function imprimirVector(vector)
 
 function resolverMatriz()
 {
-<<<<<<< HEAD
 	var tam = parseInt(document.getElementById("dimension").value);
 	if(tam==2)
 	{
@@ -89,14 +71,6 @@ function resolverMatriz()
 }
 
 function resolverPorCofactores_NxN(matriz)
-=======
-	//resolverPorSarrus_2x2(extraerMatriz(llenarMatriz(3),0,0));
-	document.getElementById("resultado").innerHTML = resolverPorCofactores_3x3(llenarMatriz(3));
-	//imprimirMatriz(extraerMatriz(llenarMatriz(3),0,1));
-}
-
-function resolverPorCofactores_3x3(matriz)
->>>>>>> ca37fa5bd2ed30a220eb90e2523159a6e97b27b8
 {
 	//var matriz = llenarMatriz(3);
 	var dimension = matriz.length;
@@ -119,7 +93,6 @@ function resolverPorCofactores_3x3(matriz)
 	}
 
 	//aplicamos formula de cofactores
-<<<<<<< HEAD
 	if (dimension==3)
 	{
 		var ind=0;
@@ -144,15 +117,6 @@ function resolverPorCofactores_3x3(matriz)
 		}
 		
 	}	
-=======
-	var ind=0;
-	while(ind<dimension)
-	{
-		nuevosIndices[ind] = indices[ind] * (Math.pow(cofactor,ind+2) * resolverPorSarrus_2x2(extraerMatriz(matriz, filaPivote, columnaPivote)));
-		columnaPivote++;
-		ind++;
-	}
->>>>>>> ca37fa5bd2ed30a220eb90e2523159a6e97b27b8
 	
 	//calculamos la determinante con la sumatoria de indices
 	for (i=0; i<dimension;i++)
