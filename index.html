@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Determinantes: Cofactores</title>
 	<script src="js/main.js"></script>
 </head>
 <body>
-<button onclick="ImprimirMatriz()">Llenar Matriz</button>
-<p id="tabla"></p>
+	<h1>Determinante de una Matriz</h1>
+    <h2>por el metodo de Cofactores</h2><br>
+    <section>
+	  <div class="input">
+	    <label>Tamaño Matriz: </label>
+	    <input type="text" id="dimension" name="dimension" onkeypress="return runScript(event)" autocorrect="off" autocapitalize="off" maxlength="2">
+	  </div>
+	</section></br>
+    <div class="dtable"><p id="tresult"></p></div></br>
+    <h4 class="neon" id="resultado"></h4><br>
+    <a class="button" href="#" onclick="resolverMatriz();return false;">Llenar matriz</a><br><br>
+    <!--<button onclick="generarNotas()">Generar combinaciones</button>-->
+    <div align="center">
+    	<p class="footer">Autores: Jhunnior Paredes - Franco Paredes</p>
+    	<p class="footer">Carrera: Ing. Petrolera</p>
+    	<p class="footer">Universidad de Aquino Bolivia - 2014</p>
+    </div>
+<!--<button onclick="resolverMatriz()">Llenar Matriz</button>-->
 </body>
 </html>

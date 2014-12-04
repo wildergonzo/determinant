@@ -1,0 +1,201 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:500,100";
+
+* {
+	margin:0;
+	padding:0;
+	font-family: "Lato";
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #242424;
+	font-size:16px;
+	color: white;
+	font-family:'Lucida Grande',helvetica;
+	/*line-height: 1.5;*/
+}
+
+h1 {
+  	margin: 0 0 1em;
+  	font-family: 'Roboto', sans-serif;
+  	font-weight: bold;
+  	font-size: 3em;
+  	font-weight: 100;
+  	text-transform: uppercase;
+  	text-align: center;
+  	color: white;
+
+   	display: block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h2 {
+  	margin: 0;
+ 	font-size: 2em;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	text-transform: lowercase;
+	color: tomato;
+}
+
+table {
+	border: 1px solid #222;
+	border-collapse: collapse;
+	width: 60%;
+}
+
+th, td {
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+	text-align: center;
+	font-family:'Lucida Grande',helvetica;
+}
+
+.highlight {
+	font-weight: bold;
+	color: tomato;
+}
+
+table.table-striped {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+//* -- input elements -- */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*body, input {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}*/
+input[type=text] {
+  font-family:'Lucida Grande',helvetica;
+  font-weight: bold;
+  border: 0;
+  margin: 0;
+  height: 40px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 1em;
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  transition: background-color .5s;
+}
+input:focus {
+  outline: none;
+}
+label {
+  font-family:'Lucida Grande',helvetica;
+  width: 70%;
+  display: block;
+  float: left;
+  color: #999;
+  padding: 0 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 40px;
+  white-space: nowrap;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+.active label {
+  color: #333;
+}
+.input {
+  border: solid #ccc;
+  border-width: 0 1px 1px 1px;
+  -webkit-transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  transition: background-color .5s;
+  overflow: hidden;
+}
+.input:first-of-type {
+  border-top: 1px solid #ccc;
+  border-radius: 6px 6px 0 0;
+}
+.input:last-of-type {
+  border-radius: 6px 6px 6px 6px;
+}
+.active, .active input {
+  background-color: #feffe8;
+}
+.input:hover label {
+  color: white;
+}
+section {
+  display: block;
+  max-width: 350px;
+  margin: 20px auto;
+}
+.toggle-mask {
+  font-size: 70%;
+  color: #999;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 40px;
+  display: block;
+  width: 20%;
+  text-align: center;
+  float: right;
+}
+.toggle-mask:hover {
+  color: #0c4d6d;
+}
+#dimension {
+  width: 30%;
+  text-align: center;
+  display: block;
+}
+
+/*-- button --*/
+.button {
+  display:block;
+  margin: auto;
+  text-align: center;
+  border-radius:4px;
+  text-decoration: none;
+  font-family:'Lucida Grande',helvetica;
+  background: tomato;
+  /*background-color: rgb(105, 199, 115);*/
+  background-color: tomato;
+  -webkit-box-shadow: 0 4px 0 0 rgb(194, 83, 63);
+  -moz-box-shadow: 0 4px 0 0 rgb(194, 83, 63);
+  box-shadow: 0 4px 0 0 rgb(194, 83, 63);
+  font-size: 20px !important;
+  padding: 15px 20px;
+  width: 250px;
+  /*color: #FFF;*/
+  color: #FFE4C4;
+}
+.button:hover {
+  /*color: #51A65F;*/
+  color: white;
+}
+
+/*-- footer --*/
+p.footer{
+	text-align: center;
+	font-family:'Lucida Grande',helvetica;
+}
+h4.neon{
+  text-align: center;
+  font-size: 250%;
+  color:#fff;
+  /*Use shadows to slowly build up the glow. The first shadow should be the colour of the text. Subsequent shadows are the colour you want the glow to be, all with no x or y offset and with increasing amounts of blur (the number of shadows you use depends on how big you want the glow to be).*/
+  text-shadow:0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff, 0 0 50px #00d2ff, 0 0 60px #00d2ff, 0 0 70px #00d2ff;
+}
